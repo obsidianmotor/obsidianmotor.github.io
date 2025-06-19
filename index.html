@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site de Voitures</title>
+    <style>
+        body {
+            background-image: url('car_logo_converted.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            margin: 0;
+            padding-top: 70px; 
+            font-family: Arial, sans-serif;
+        }
+        #background-overlay {
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(255,255,255,0.4); 
+            z-index: 0;
+            pointer-events: none;
+        }
+        main, header, footer {
+            position: relative;
+            z-index: 1;
+        }
+        #navbar {
+            position: fixed;
+            top: 0; left: 0; right: 0;
+            background: rgba(25, 118, 210, 0.92);
+            padding: 12px 0;
+            z-index: 10;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+        #navbar ul {
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            flex-wrap: wrap;
+        }
+        #navbar ul li {
+            margin: 0 1em;
+        }
+        #navbar ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            letter-spacing: 1px;
+            transition: color 0.2s;
+            font-size: 1.1em;
+            padding: 8px 4px;
+            display: inline-block;
+        }
+        #navbar ul li a:hover {
+            color: #ffd700;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .voiture {
+            flex: 1 1 300px;
+            max-width: 300px;
+        }
+        button {
+            font-size: 18px;
+            padding: 12px 28px;
+            margin-top: 20px;
+            cursor: pointer;
+            border: none;
+            border-radius: 30px;
+            background: linear-gradient(90deg, #ff9800 40%, #f44336 100%);
+            color: #fff;
+            font-weight: bold;
+            box-shadow: 0 4px 14px 0 rgba(25,118,210,0.12);
+            transition: background 0.25s, transform 0.18s, box-shadow 0.18s;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+        button:hover, button:focus {
+            background: linear-gradient(90deg, #f44336 40%, #ff9800 100%);
+            transform: translateY(-2px) scale(1.04);
+            box-shadow: 0 6px 18px 0 rgba(244,67,54,0.15);
+            outline: none;
+        }
+        @media (max-width: 600px) {
+    #navbar ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #navbar ul li {
+        margin: 0.5em 0.7em;
+    }
+    .container {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+        /* Centrage du texte sur toute la page */
+        body, main, header, nav, footer {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <nav id="navbar">
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="Voitures.html">Voitures</a></li>
+            <li><a href="information.html">Information</a></li>
+        </ul>
+    </nav>
+    <div id="background-overlay"></div>
+    <header>
+        <h1>Bienvenue sur le site des voitures</h1>
+    </header>
+    <main>
+        <h1>Découvrez nos voitures et choisissez le modèle parfait pour vous.</h1>
+        <h2>Pourquoi utiliser notre site ?</h2>
+
+  <li>✔️ Interface simple et rapide</li>
+  <li>✔️ Comparaison de plusieurs modèles</li>
+  <li>✔️ Informations claires et fiables</li>
+
+        <h2>À propos</h2>
+<p>Ce site a été mis en place dans le cadre d'un projet scolaire. Projet développé avec HTML, CSS et un peu de JavaScript.</p>
+        <!-- Comparateur supprimé -->
+    </main>
+</body>
+</html>
